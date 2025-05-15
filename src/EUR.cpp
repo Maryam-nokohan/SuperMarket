@@ -1,4 +1,4 @@
-#include "include/EUR.hpp"
+#include "../include/EUR.hpp"
 std ::string EUR::GetSymbol() const
 {
     return "EUR";
