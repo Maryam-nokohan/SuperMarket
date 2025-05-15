@@ -42,7 +42,7 @@ Item& Item::operator++(){
 void Item::print(ostream& output) const{
     output << left << setw(15) << name
     << right << setw(6) << quantity 
-    << right << setw(10) << price ;
+    << right << setw(10) << price << "$";
 
 
 }
