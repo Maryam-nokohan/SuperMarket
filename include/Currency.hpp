@@ -1,17 +1,16 @@
 #ifndef CURRENCY_H
 #define CURRENCY_H
 #include <string>
-#include <include/Bank.hpp>
 class Currency
 {
     // friend std ::ostream &operator<<(std ::ostream &output, const Currency &);
     // friend std ::istream &operator>>(std ::istream &input, Currency &);
-    friend class BankAccount;
+    // friend class BankAccount;
 protected:
     double amount;
-
 public:
-    Currency(double a = 0.0) : amount(a) {}
+    Currency(double =0.0);
+    void SetAmount(double);
     virtual std ::string GetSymbol() const = 0;
     double GetAmount() const;
     virtual double ToUSD() const = 0;

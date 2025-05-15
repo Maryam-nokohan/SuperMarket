@@ -1,4 +1,4 @@
-#include "include/IRR.hpp"
+#include "../include/IRR.hpp"
 std ::string IRR::GetSymbol() const
 {
     return "IRR";
