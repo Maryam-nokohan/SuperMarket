@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/app.dir/src/Bank.cpp.o CMakeFiles/app.dir/src/Currency.cpp.o CMakeFiles/app.dir/src/EUR.cpp.o CMakeFiles/app.dir/src/IRR.cpp.o CMakeFiles/app.dir/src/USD.cpp.o CMakeFiles/app.dir/src/Fruit.cpp.o CMakeFiles/app.dir/src/Item.cpp.o CMakeFiles/app.dir/src/Seasoning.cpp.o CMakeFiles/app.dir/src/Snack.cpp.o CMakeFiles/app.dir/main.cpp.o -o app 

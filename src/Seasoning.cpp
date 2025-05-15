@@ -9,9 +9,7 @@ string Seasoning::getUnit() const{
 
 }
 void Seasoning::print(ostream& output) const{
-      output << left << setw(15) << name
-    << right << setw(6) << quantity << getUnit()
-    << right << setw(10) << price << "$";
+    output << name <<" - " << price  <<" per "<< getUnit();
 }
 Item* Seasoning::copy() const{
 

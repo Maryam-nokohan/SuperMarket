@@ -1,0 +1,3 @@
+/home/saba/SuperMarket/build/CMakeFiles/app.dir
+/home/saba/SuperMarket/build/CMakeFiles/edit_cache.dir
+/home/saba/SuperMarket/build/CMakeFiles/rebuild_cache.dir

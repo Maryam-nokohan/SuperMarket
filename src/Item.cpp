@@ -28,8 +28,9 @@ void Item::buy(double value){
     }
 }
 double Item::Totalprice() const{
-    int Total = NumOfPurchases + NumOfPurchases/5 ;
-    return Total * price ;
+    int free = NumOfPurchases/5 ;
+    int payable = NumOfPurchases - free ;
+    return payable * price;
 }
 Item& Item::operator++(){
     if(quantity > 0){
@@ -38,14 +39,27 @@ Item& Item::operator++(){
     }
     return *this;
 }
+// void Item::printReceipt(ostream& output) const{
+//      int Totalunits = NumOfPurchases + NumOfPurchases/5 ;
+//     double totalprice = Totalprice();
+//     print(output);
+//     output << "| Quantity: " << NumOfPurchases
+//     << " ( " << NumOfPurchases / 5 << " free )"
+//     << "| Total: $" << totalprice << endl ;
+    void Item::printReceipt(ostream& output) const {
+    int free = NumOfPurchases/ 5;
+    int payable = NumOfPurchases - free;
+    double total = Totalprice();
 
-void Item::print(ostream& output) const{
-    output << left << setw(15) << name
-    << right << setw(6) << quantity 
-    << right << setw(10) << price << "$";
-
-
+    output << left << setw(12) << name
+       << "|  $" << right << setw(5) << fixed << setprecision(2) << price
+       << "  |" << setw(2) << NumOfPurchases << setw(7)<<getUnit()
+       << " |" << setw(6) << free
+       << "| $" << setw(6) << fixed << setprecision(2) << total
+       << endl;
 }
+
+
 
 std::ostream& operator<<(std::ostream& output , const Item& I){
     I.print(output);

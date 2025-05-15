@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Bank.cpp.o -c /home/saba/SuperMarket/src/Bank.cpp",
+  "file": "/home/saba/SuperMarket/src/Bank.cpp",
+  "output": "CMakeFiles/app.dir/src/Bank.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Currency.cpp.o -c /home/saba/SuperMarket/src/Currency.cpp",
+  "file": "/home/saba/SuperMarket/src/Currency.cpp",
+  "output": "CMakeFiles/app.dir/src/Currency.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/EUR.cpp.o -c /home/saba/SuperMarket/src/EUR.cpp",
+  "file": "/home/saba/SuperMarket/src/EUR.cpp",
+  "output": "CMakeFiles/app.dir/src/EUR.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/IRR.cpp.o -c /home/saba/SuperMarket/src/IRR.cpp",
+  "file": "/home/saba/SuperMarket/src/IRR.cpp",
+  "output": "CMakeFiles/app.dir/src/IRR.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/USD.cpp.o -c /home/saba/SuperMarket/src/USD.cpp",
+  "file": "/home/saba/SuperMarket/src/USD.cpp",
+  "output": "CMakeFiles/app.dir/src/USD.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Fruit.cpp.o -c /home/saba/SuperMarket/src/Fruit.cpp",
+  "file": "/home/saba/SuperMarket/src/Fruit.cpp",
+  "output": "CMakeFiles/app.dir/src/Fruit.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Item.cpp.o -c /home/saba/SuperMarket/src/Item.cpp",
+  "file": "/home/saba/SuperMarket/src/Item.cpp",
+  "output": "CMakeFiles/app.dir/src/Item.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Seasoning.cpp.o -c /home/saba/SuperMarket/src/Seasoning.cpp",
+  "file": "/home/saba/SuperMarket/src/Seasoning.cpp",
+  "output": "CMakeFiles/app.dir/src/Seasoning.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/src/Snack.cpp.o -c /home/saba/SuperMarket/src/Snack.cpp",
+  "file": "/home/saba/SuperMarket/src/Snack.cpp",
+  "output": "CMakeFiles/app.dir/src/Snack.cpp.o"
+},
+{
+  "directory": "/home/saba/SuperMarket/build",
+  "command": "/usr/bin/g++  -I/home/saba/SuperMarket/include -g -o CMakeFiles/app.dir/main.cpp.o -c /home/saba/SuperMarket/main.cpp",
+  "file": "/home/saba/SuperMarket/main.cpp",
+  "output": "CMakeFiles/app.dir/main.cpp.o"
+}
+]
