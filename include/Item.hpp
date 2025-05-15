@@ -6,21 +6,26 @@
 class Item
 {
 friend std::ostream& operator<<(std::ostream& , const Item);
-private:
+protected:
 std::string name;
 double price;
-int quantity;
+double quantity;
+int NumOfPurchases = 0;
 
 public:
-Item(const std::string& , double , int);
+Item(const std::string& , double , double);
+virtual ~Item() = default;
 std::string getName() const;
+virtual Item* copy() const = 0 ;
 double getPrice() const;
-int getQuantity() const;
+double getQuantity() const;
+int getNumOfPurchas() const;
 virtual std::string getUnit() const = 0 ;
-virtual void buy(int) = 0 ;
+virtual void buy(double);
+double Totalprice() const;
 virtual void print(ostream&) const;
+Item& operator++();
 
 };
-std::ostream& operator<<(std::ostream& , const Item&);
 
 #endif

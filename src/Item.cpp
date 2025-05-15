@@ -1,7 +1,8 @@
 #include "../include/Item.hpp"
 #include <iomanip>
+#include <stdexcept>
 using namespace std;
-Item::Item(const std::string& n, double p, int q) : name(n) , price(p) ,quantity(q) {};
+Item::Item(const std::string& n, double p, double q) : name(n) , price(p) ,quantity(q) {};
 
 string Item::getName() const{ 
     return name;
@@ -9,8 +10,33 @@ string Item::getName() const{
 double Item::getPrice() const{
     return price;
 }
-int Item::getQuantity() const{
+double Item::getQuantity() const{
     return quantity;
+}
+int Item::getNumOfPurchas() const{
+    return NumOfPurchases;
+}
+void Item::buy(double value){
+    if(value < 0){
+        throw invalid_argument("Cannot reduce negative quantity.");
+    }
+    if(value > quantity){
+        throw runtime_error("Not enough quantity available.");
+    }
+    if(value <= quantity){
+        quantity -= value;
+    }
+}
+double Item::Totalprice() const{
+    int Total = NumOfPurchases + NumOfPurchases/5 ;
+    return Total * price ;
+}
+Item& Item::operator++(){
+    if(quantity > 0){
+        NumOfPurchases ++ ;
+        quantity -- ;
+    }
+    return *this;
 }
 
 void Item::print(ostream& output) const{
