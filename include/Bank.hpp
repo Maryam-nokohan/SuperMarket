@@ -1,6 +1,8 @@
 #ifndef BANK_H
 #define BANK_H
 #include "../include/Currency.hpp"
+#include <ctime>
+#include <iostream>
 class BankAccount
 {
 protected:
@@ -8,9 +10,10 @@ protected:
     std ::string AccountNumber;
     Currency *Balance;
     double DailyLimit;
-
-public:
-    BankAccount() {}
+    double DailyTranssformed = 0.0;
+    public:
+    
+    BankAccount()=default;
     BankAccount(std ::string n, std ::string num, Currency *a, int d);
     virtual ~BankAccount();
     void Deposit(Currency *a);
@@ -20,12 +23,18 @@ public:
 };
 class PersonalAccount : public BankAccount
 {
-public:
+    private:
+    public:
+    PersonalAccount()=default;
+    virtual ~PersonalAccount(){}
     PersonalAccount(const std ::string &n, const std ::string num, Currency *currency);
 };
 class OrganizationAccount : public BankAccount
 {
-public:
+    private:
+    public:
+    virtual ~OrganizationAccount(){}
+    OrganizationAccount()=default;
     OrganizationAccount(const std ::string &n, const std ::string num, Currency *currency);
 };
 
