@@ -1,7 +1,8 @@
 #include "../include/Snack.hpp"
 #include <iomanip>
+#include "../include/Currency.hpp"
 using namespace std;
-Snack::Snack(const string& n , double pp , double qp) : Item(n , pp , qp){};
+Snack::Snack(const string& n , Currency* pp , double qp) : Item(n , pp , qp){};
 
 string Snack::getUnit() const{
     return "package" ;

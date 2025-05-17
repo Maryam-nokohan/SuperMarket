@@ -1,8 +1,9 @@
 #include "../include/Seasoning.hpp"
 #include <iomanip>
+#include "../include/Currency.hpp"
 using namespace std;
 
-Seasoning::Seasoning(const string& n , double pg , double qg) : Item(n , pg , qg){}
+Seasoning::Seasoning(const string& n , Currency* pg , double qg) : Item(n , pg , qg){}
 
 string Seasoning::getUnit() const{
     return "g" ;

@@ -1,7 +1,8 @@
 #include "../include/Fruit.hpp"
 #include <iomanip>
+#include "../include/Currency.hpp"
 using namespace std;
-Fruit::Fruit(const string& n , double pkg , double qkg) : Item(n , pkg , qkg){};
+Fruit::Fruit(const string& n , Currency* pkg , double qkg) : Item(n , pkg , qkg){};
 string Fruit::getUnit() const{
     return "kg" ;
 }
