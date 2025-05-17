@@ -15,6 +15,8 @@ public:
     double GetAmount() const;
     virtual double ToUSD() const = 0;
     virtual double FromUSD(double) = 0;
+    virtual double ToEUR() const = 0;
+    virtual double ToIRR() const = 0;
     Currency &operator+=(const Currency &);
     Currency &operator-=(const Currency &);
     Currency &operator*=(const Currency &);
