@@ -1,13 +1,21 @@
 #include "../include/IRR.hpp"
 std ::string IRR::GetSymbol() const
 {
-    return "IRR";
-}
-double IRR::ToUSD() const
-{
-    return amount * 0.000024;
+    return Symbol;
 }
 double IRR::FromUSD(double irr)
 {
-    return irr / 0.000024;
+    return irr * 82000;
+}
+double IRR::ToUSD() const
+{
+    return amount / 82000;
+}
+double IRR::ToEUR()const
+{
+    return amount / 91000;
+}
+double IRR::ToIRR()const
+{
+    return amount;
 }
