@@ -23,7 +23,8 @@ int getNumOfPurchas() const;
 virtual std::string getUnit() const = 0 ;
 virtual void buy(double);
 double Totalprice() const;
-virtual void print(std::ostream&) const;
+virtual void print(std::ostream&) const = 0;
+void printReceipt(std::ostream&) const ;
 Item& operator++();
 
 };
