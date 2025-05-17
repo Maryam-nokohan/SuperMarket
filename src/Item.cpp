@@ -39,13 +39,7 @@ Item& Item::operator++(){
     }
     return *this;
 }
-// void Item::printReceipt(ostream& output) const{
-//      int Totalunits = NumOfPurchases + NumOfPurchases/5 ;
-//     double totalprice = Totalprice();
-//     print(output);
-//     output << "| Quantity: " << NumOfPurchases
-//     << " ( " << NumOfPurchases / 5 << " free )"
-//     << "| Total: $" << totalprice << endl ;
+
     void Item::printReceipt(ostream& output) const {
     int free = NumOfPurchases/ 5;
     int payable = NumOfPurchases - free;
@@ -62,7 +56,7 @@ Item& Item::operator++(){
 
 
 std::ostream& operator<<(std::ostream& output , const Item& I){
-    I.print(output);
+    I.printReceipt(output);
     return output;
 
 }
