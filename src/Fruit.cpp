@@ -9,10 +9,8 @@ string Fruit::getUnit() const{
 Item* Fruit::copy() const{
     return new Fruit(*this);
 }
-void Fruit::print(ostream& output) const{
-     output << left << setw(15) << name
+void Fruit::print() const{
+     std :: cout << left << setw(15) << name
     << right << setw(6) << quantity << getUnit()
-    << right << setw(10) << price << "$";
-
-
+    << right << setw(10) << price->GetAmount() << price->GetSymbol();
 }

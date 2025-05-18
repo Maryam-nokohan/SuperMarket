@@ -17,22 +17,22 @@ Currency ::Currency(double a)
 }
 Currency &Currency ::operator+=(const Currency &currency)
 {
-    amount += currency.ToUSD();
+    amount += currency.GetAmount();
     return *this;
 }
 Currency &Currency ::operator-=(const Currency &currency)
 {
-    amount -= currency.ToUSD();
+    amount -= currency.GetAmount();
     return *this;
 }
 Currency &Currency ::operator*=(const Currency &currency)
 {
-    amount *= currency.ToUSD();
+    amount *= currency.GetAmount();
     return *this;
 }
 Currency &Currency ::operator/=(const Currency &currency)
 {
-    amount /= currency.ToUSD();
+    amount /= currency.GetAmount();
     return *this;
 }
 bool Currency ::operator==(const Currency &currency)

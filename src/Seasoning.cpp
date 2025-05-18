@@ -9,10 +9,10 @@ string Seasoning::getUnit() const{
     return "g" ;
 
 }
-void Seasoning::print(ostream& output) const{
-      output << left << setw(15) << name
+void Seasoning::print() const{
+      std :: cout << left << setw(15) << name
     << right << setw(6) << quantity << getUnit()
-    << right << setw(10) << price << "$";
+    << right << setw(10) <<  price->GetAmount() << price->GetSymbol();
 }
 Item* Seasoning::copy() const{
 

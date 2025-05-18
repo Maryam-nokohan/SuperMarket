@@ -14,8 +14,10 @@ void BankAccount ::Deposit(Currency *a)
 }
 void BankAccount ::WithDraw(Currency *a)
 {
+   
     if(DailyTranssformed + a->ToUSD() > DailyLimit)
     {  
+        std :: cout << "You want to transfor : "<<DailyTranssformed + a->ToUSD() <<" USD and the daily limit is : "<<DailyLimit <<'\n';
         throw std ::invalid_argument("Daily limit exceeded!\n");
     }
     else if (a->ToUSD() > Balance->ToUSD())

@@ -7,10 +7,10 @@ Snack::Snack(const string& n , Currency* pp , double qp) : Item(n , pp , qp){};
 string Snack::getUnit() const{
     return "package" ;
 }
-void Snack::print(ostream& output) const{
-    output<< left << setw(15) << name 
+void Snack::print() const{
+    std :: cout << left << setw(15) << name 
     << right << setw(6) << quantity << getUnit()
-    << right << setw(10) << price << "$" ;
+    << right << setw(10) <<  price->GetAmount() << price->GetSymbol();
 }
 Item* Snack::copy() const {
     return new Snack(*this) ;
