@@ -11,6 +11,7 @@ src/Fruit.cpp
 src/Item.cpp
 src/Seasoning.cpp
 src/Snack.cpp
+src/Shop.cpp
 main.cpp
 )
 add_executable(app ${SOURCES})
