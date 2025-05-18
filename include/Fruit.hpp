@@ -7,7 +7,7 @@ class Fruit : public Item {
     Fruit(const std::string& , Currency* , double );
     std::string getUnit() const override ;
     Item* copy() const override;
-    void print(std::ostream&) const override;
+    void print() const override;
 
 };
 #endif

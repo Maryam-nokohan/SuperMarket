@@ -25,13 +25,12 @@ Currency* getPrice() const;
 double getQuantity() const;
 int getNumOfPurchas() const;
 virtual std::string getUnit() const = 0 ;
-double Totalprice() const;
-virtual void print(std::ostream&) const = 0;
+Currency* Totalprice() const;
+virtual void print() const = 0;
 void printReceipt(std::ostream&) const ;
 Item& operator++();
 
 };
-void InputItems(const std :: vector <Item*>& , PersonalAccount* , OrganizationAccount *);
 
 
 #endif

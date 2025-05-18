@@ -6,7 +6,7 @@ class Seasoning : public Item{
     public:
     Seasoning(const std::string& ,Currency* , double);
     std::string getUnit() const override;
-    void print(std::ostream&) const override;
+    void print() const override;
     Item* copy() const override;
 
 };
