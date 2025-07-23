@@ -29,14 +29,17 @@ int Item::getNumOfPurchas() const
 {
     return NumOfPurchases;
 }
+int Item::getFree() const{
+    return  NumOfPurchases / 5;
+}
 
 Currency* Item::Totalprice() const
 {
-    int free = NumOfPurchases / 5;
+    int free = getFree();
     int payable = NumOfPurchases - free;
-    Currency * total = new USD(payable * price->GetAmount());
-    return total;
+    return new USD(payable * price->GetAmount());
 }
+
 Item &Item::operator++()
 {
     if (quantity > 0)
@@ -61,7 +64,7 @@ void Item::printReceipt(std::ostream &output) const
            << std::setw(6) << std::left << NumOfPurchases    
            << std :: right<< std :: setw(7) << getUnit()                             
            << " | "
-           << std::setw(4) << std::right << free      
+           << std::setw(4) << std::right << getFree()    
            << " | "
            << std::setw(8) << std::right << std::fixed << std::setprecision(2) << total->GetAmount()   
            << " " 
