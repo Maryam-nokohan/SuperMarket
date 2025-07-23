@@ -14,7 +14,6 @@ std::string name;
 Currency * price;
 double quantity;
 int NumOfPurchases = 0;
-
 public:
 Item(const std::string& , Currency* , double);
 virtual ~Item() = default;
@@ -24,6 +23,7 @@ virtual Item* copy() const = 0 ;
 Currency* getPrice() const;
 double getQuantity() const;
 int getNumOfPurchas() const;
+int getFree() const;
 virtual std::string getUnit() const = 0 ;
 Currency* Totalprice() const;
 virtual void print() const = 0;
